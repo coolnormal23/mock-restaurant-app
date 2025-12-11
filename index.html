@@ -1,9 +1,35 @@
 <html>
     <head>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="index.css">
+       <title>Jimmy's Diner</title>
     </head>
     <body>
-	<script src="index.js"></script>
+        <div id="container">
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </header>
+            <main>
+                <div class="item">
+                    <div class="item-container">
+                        <p class="item-emoji">🍕</p>
+                        <div class="item-text">
+                            <h4 class="item-name">Pizza</h4>
+                            <p class="item-ingredients">pepperoni, mushroom, mozarella</p>
+                            <p class="item-price">$14</p>
+                        </div>
+                        <button class="item-button">
+                            +
+                        </button>
+                    </div>
+                    <div class="bottom-border"></div>
+                </div>
+            </main>
+        </div>
+	    <script src="index.js" type="module"></script>
     </body>
 </html>
 

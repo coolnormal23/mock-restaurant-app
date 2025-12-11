@@ -1,3 +1,100 @@
+/* Formatting */
 body {
     margin: 0;
+    font-family: 'Smythe', sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
 } 
+
+main {
+    background-color: white;
+    width: 600px;
+}
+
+header {
+    background-image: url("img/header.png");
+    background-size: cover;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typography */
+
+header h1,
+header h3 {
+    margin-left: 46px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+}
+
+header h3 {
+    font-size: 1.375rem;
+    margin-top: 13px;
+}
+
+h1, h2, h3, h4, h5, p {
+    font-weight: 300;
+    margin: 0px;
+}
+
+/* Menu styling */
+.item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 40px 0px;
+    border-bottom: 1px;
+}
+
+.item-emoji {
+    font-size: 4.875rem;
+    margin-right: 30px;
+}
+
+.item-name {
+    font-size: 1.75rem;
+}
+
+.item-ingredients {
+    font-size: 1rem;
+    color: #8B8B8B;
+}
+
+.item-button {
+    margin-left: auto;
+    color: #3C3C3C;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: white;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.item-text p {
+    margin: 10px 0px;
+}
+
+.item-price {
+    font-size: 1.25rem;
+}
+
+.bottom-border {
+    height: 1px;
+    background-color: #D2D2D2;
+    margin: 0px 40px;
+}
