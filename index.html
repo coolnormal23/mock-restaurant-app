@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
     <head>
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,20 +14,38 @@
                 <h3>The best burgers and pizzas in town.</h3>
             </header>
             <main>
-                <div class="item">
-                    <div class="item-container">
-                        <p class="item-emoji">🍕</p>
-                        <div class="item-text">
-                            <h4 class="item-name">Pizza</h4>
-                            <p class="item-ingredients">pepperoni, mushroom, mozarella</p>
-                            <p class="item-price">$14</p>
+                <section class="items-list">
+                    <div class="item">
+                        <div class="item-container">
+                            <p class="item-emoji">🍕</p>
+                            <div class="item-text">
+                                <h4 class="item-name">Pizza</h4>
+                                <p class="item-ingredients">pepperoni, mushroom, mozarella</p>
+                                <p class="price">$0</p>
+                            </div>
+                            <button class="item-button">
+                                +
+                            </button>
                         </div>
-                        <button class="item-button">
-                            +
-                        </button>
                     </div>
-                    <div class="bottom-border"></div>
-                </div>
+                </section>
+                <section class="checkout">
+                    <h4 id="yourorder">Your Order</h4>
+                    <div class="checkout-items">
+                        <div class="checkout-item">
+                            <h4>Pizza</h4>
+                            <button class="remove-button">remove</button>
+                            <p class="price">$0</p>
+                        </div>
+                    </div>
+                    <div class="total-price">
+                        <h4>Total price:</h4>
+                        <p class="price">$0</p>
+                    </div>
+                    <button id="complete-order">
+                        Complete Order
+                    </button>
+                </section>
             </main>
         </div>
 	    <script src="index.js" type="module"></script>

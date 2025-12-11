@@ -28,6 +28,15 @@ header {
     align-items: center;
 }
 
+/* Shared */
+.checkout, .items-list {
+    margin: 45px;
+}
+
+button {
+    font-family: 'Verdana', sans-serif;
+}
+
 /* Typography */
 
 header h1,
@@ -50,11 +59,15 @@ h1, h2, h3, h4, h5, p {
 }
 
 /* Menu styling */
+
+.items-list {
+    border-bottom: 2px solid #D2D2D2;
+}
+
 .item-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
     padding: 40px 0px;
     border-bottom: 1px;
 }
@@ -69,7 +82,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 .item-ingredients {
-    font-size: 1rem;
     color: #8B8B8B;
 }
 
@@ -89,12 +101,46 @@ h1, h2, h3, h4, h5, p {
     margin: 10px 0px;
 }
 
-.item-price {
+.price {
     font-size: 1.25rem;
+    margin-left: auto;
 }
 
-.bottom-border {
-    height: 1px;
-    background-color: #D2D2D2;
-    margin: 0px 40px;
+/* Checkout styling */
+
+#yourorder {
+    text-align: center;
+}
+
+.checkout h4 {
+    font-size: 1.75rem;
+}
+
+.remove-button {
+    background-color: white;
+    border: none;
+    margin: 0;
+    color: #BBBBBB;
+    font-size: .75rem;
+    margin-left: 13px;
+}
+
+.checkout-item, .total-price {
+    display: flex;
+    margin: 11px 0px;
+}
+
+.checkout-items {
+    border-bottom: 2px solid #393333;
+}
+
+#complete-order {
+    width: 100%;
+    height: 60px;
+    background-color: #16DB99;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 40px;
 }
