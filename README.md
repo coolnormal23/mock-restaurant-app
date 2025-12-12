@@ -1,4 +1,5 @@
-Basic menu mockup.
+[Live demo](https://astonishing-fudge-038a1e.netlify.app/)
+Basic restaraunt menu
 Features:
 - Add items to cart and checkout
 - Checkout form
