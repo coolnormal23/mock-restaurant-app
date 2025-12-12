@@ -8,45 +8,45 @@
        <title>Jimmy's Diner</title>
     </head>
     <body>
-        <div id="container">
-            <header>
+        <div class="flex-column" id="container">
+            <header class="flex-column">
                 <h1>Jimmy's Diner</h1>
                 <h3>The best burgers and pizzas in town.</h3>
             </header>
             <main>
-                <section class="items-list">
-                    <div class="item">
-                        <div class="item-container">
-                            <p class="item-emoji">🍕</p>
-                            <div class="item-text">
-                                <h4 class="item-name">Pizza</h4>
-                                <p class="item-ingredients">pepperoni, mushroom, mozarella</p>
-                                <p class="price">$0</p>
-                            </div>
-                            <button class="item-button">
-                                +
-                            </button>
-                        </div>
-                    </div>
+                <section id="items-list">
+
                 </section>
-                <section class="checkout">
+                <section id="checkout">
                     <h4 id="yourorder">Your Order</h4>
-                    <div class="checkout-items">
-                        <div class="checkout-item">
-                            <h4>Pizza</h4>
-                            <button class="remove-button">remove</button>
-                            <p class="price">$0</p>
-                        </div>
-                    </div>
+                    <div id="checkout-items"></div>
                     <div class="total-price">
                         <h4>Total price:</h4>
-                        <p class="price">$0</p>
+                        <p class="price" id="total-price-value">$0</p>
                     </div>
-                    <button id="complete-order">
+                    <button class="verdana bold confirm-button" id="complete-order">
                         Complete Order
                     </button>
                 </section>
             </main>
+        </div>
+        <div class="verdana flex-column" id="modal">
+            <h2 class="bold">Enter Card Details</h2>
+            <form class="flex-column">
+                <div class="form-input flex-column">
+                    <label for="name">Full Name</label>
+                    <input class="verdana" type="text" name="name" placeholder="John Doe" required/>
+                </div>
+                <div class="form-input flex-column">
+                    <label for="creditcard">Card Number</label>
+                    <input class="verdana" type="number" name="creditcard" placeholder="X" required/>
+                </div>
+                <div class="form-input flex-column">
+                    <label for="cvv">CVV</label>
+                    <input class="verdana" type="number" name="cvv" placeholder="X" required/>
+                </div>
+                <button type="submit" class="verdana bold confirm-button" id="modal-pay">Pay</button>
+            </form>
         </div>
 	    <script src="index.js" type="module"></script>
     </body>
