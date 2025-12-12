@@ -7,6 +7,7 @@ const totalPriceEl = document.getElementById('total-price-value')
 const completeOrderButton = document.getElementById('complete-order')
 const modal = document.getElementById('modal')
 const modalPayButton = document.getElementById('modal-pay')
+const formEl = document.getElementById('modal-form')
 
 let orderedItems = []
 let orderComplete = false
@@ -79,12 +80,11 @@ window.addEventListener('click', (e) => {
 
 completeOrderButton.addEventListener('click', handleCompleteOrder)
 
-modalPayButton.addEventListener('click', (e) => {
+formEl.addEventListener('submit', (e) => {
     e.preventDefault()
     completeOrderButton.removeEventListener('click', handleCompleteOrder)
     completeOrderButton.classList.toggle('checkout-complete')
     completeOrderButton.textContent = 'Thank you for submitting your order!'
-    completeOrderButton.style.fontSize = '2rem'
     modal.style.opacity = "0"
     modal.style.visibility = "hidden"
     orderComplete = true

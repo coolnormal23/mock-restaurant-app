@@ -32,18 +32,18 @@
         </div>
         <div class="verdana flex-column" id="modal">
             <h2 class="bold">Enter Card Details</h2>
-            <form class="flex-column">
+            <form class="flex-column" id="modal-form">
                 <div class="form-input flex-column">
                     <label for="name">Full Name</label>
-                    <input class="verdana" type="text" name="name" placeholder="John Doe" required/>
+                    <input class="verdana" type="text" name="name" placeholder="John Doe" id="name" required/>
                 </div>
                 <div class="form-input flex-column">
                     <label for="creditcard">Card Number</label>
-                    <input class="verdana" type="number" name="creditcard" placeholder="X" required/>
+                    <input class="verdana" type="number" name="creditcard" id="creditcard" placeholder="X" required/>
                 </div>
                 <div class="form-input flex-column">
                     <label for="cvv">CVV</label>
-                    <input class="verdana" type="number" name="cvv" placeholder="X" required/>
+                    <input class="verdana" type="number" name="cvv" placeholder="X" id="cvv" required/>
                 </div>
                 <button type="submit" class="verdana bold confirm-button" id="modal-pay">Pay</button>
             </form>
